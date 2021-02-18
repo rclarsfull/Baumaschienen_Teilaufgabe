@@ -33,7 +33,7 @@ public class Baumaschiene {
         return frei;
     }
 
-    public Buchung buche(Auftrag a, LocalDate von, LocalDate bis) {      // noch nicht fertig
+    public Buchung buche(Auftrag a, LocalDate von, LocalDate bis) {
         Buchung buchung = new Buchung(a, this, von, bis, null);
 
         if (ersteBuchung == null) {
